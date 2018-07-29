@@ -1,10 +1,14 @@
 
 
-class Cell(x, y):
-    cell.x = x
-    cell.y = y
+class Cell():
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    
+    def __str__(self):
+        return "Cell(%i,%i)" % (self.x, self.y)
     
     def set_neighbors(self, neighbors):
-        cell.neighbors = neighbors
+        self.neighbors = neighbors
     
     
